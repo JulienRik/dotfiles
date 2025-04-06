@@ -1,0 +1,180 @@
+# Vim Commands
+
+% vim, editor, text
+
+# Enter Insert mode (before cursor)
+i
+
+# Enter Insert mode (after cursor)
+a
+
+# Insert at beginning of line
+I
+
+# Insert at end of line
+A
+
+# Return to Normal mode
+Esc
+
+# Enter Visual mode
+v
+
+# Enter Visual Line mode
+V
+
+# Enter Visual Block mode
+Ctrl+v
+
+# Navigate left
+h
+
+# Navigate down
+j
+
+# Navigate up
+k
+
+# Navigate right
+l
+
+# Go to next word
+w
+
+# Go to previous word
+b
+
+# Go to start of line
+0
+
+# Go to end of line
+$
+
+# Go to first line of document
+gg
+
+# Go to last line of document
+G
+
+# Jump to previous paragraph
+{
+
+# Jump to next paragraph
+}
+
+# Page down
+Ctrl+f
+
+# Page up
+Ctrl+b
+
+# Go to specific line
+:<line_number>
+
+# Delete line
+dd
+
+# Yank (copy) line
+yy
+
+# Paste after cursor
+p
+
+# Paste before cursor
+P
+
+# Undo
+u
+
+# Redo
+Ctrl+r
+
+# Delete character
+x
+
+# Replace character
+r
+
+# Change word
+cw
+
+# Change line
+cc
+
+# Change to end of line
+C
+
+# Toggle case
+~
+
+# Search forward
+/<pattern>
+
+# Search backward
+?<pattern>
+
+# Next match
+n
+
+# Previous match
+N
+
+# Replace all occurrences
+:%s/<old>/<new>/g
+
+# Replace with confirmations
+:%s/<old>/<new>/gc
+
+# Save file
+:w
+
+# Quit
+:q
+
+# Save and quit
+:wq
+
+# Quit without saving
+:q!
+
+# Open file
+:e <filename>
+
+# Open file in horizontal split
+:sp <filename>
+
+# Open file in vertical split
+:vsp <filename>
+
+# Navigate between splits
+Ctrl+w h/j/k/l
+
+# Open file in new tab
+:tabnew <filename>
+
+# Next tab
+gt
+
+# Previous tab
+gT
+
+# Yank line into register a
+"ayy
+
+# Paste from register a
+"ap
+
+# Show registers content
+:reg
+
+# Record macro a
+qa
+
+# Stop recording macro
+q
+
+# Run macro a
+@a
+
+# Repeat last macro
+@@

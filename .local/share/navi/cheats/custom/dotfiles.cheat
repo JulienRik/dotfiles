@@ -1,0 +1,63 @@
+# Dotfiles Management
+
+% dotfiles, git, config
+
+# Check status of dotfiles
+config status
+
+# Add a file to track
+config add <file>
+
+# Commit changes
+config commit -m "<message>"
+
+# Push changes to GitHub
+config push
+
+# Pull changes from GitHub
+config pull
+
+# Show differences
+config diff
+
+# Show commit history
+config log --oneline
+
+# Clone dotfiles repository on a new machine
+git clone --bare git@github.com:JulienRik/dotfiles.git $HOME/.cfg
+
+# Define the config alias
+alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Checkout the actual content
+config checkout
+
+# Hide untracked files
+config config --local status.showUntrackedFiles no
+
+# Add the alias to your shell configuration
+echo "alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> ~/.zshrc
+
+# Add multiple files
+config add <file1> <file2> <file3>
+
+# See what files are being tracked
+config ls-files
+
+# Remove a file from tracking (but keep the file)
+config rm --cached <file>
+
+# Handle checkout conflicts - backup existing files and checkout
+mkdir -p ~/.config-backup && config checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} mv {} ~/.config-backup/{} && config checkout
+
+# Create a new branch
+config checkout -b <branch-name>
+
+# Switch branches
+config checkout <branch-name>
+
+# Merge branches
+config merge <branch-name>
+
+# Set remote URL for personal account
+config remote set-url origin git@github-personal:JulienRik/dotfiles.git

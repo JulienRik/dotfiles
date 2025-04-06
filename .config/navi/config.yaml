@@ -1,0 +1,23 @@
+cheats:
+  paths:
+    - ~/.local/share/navi/cheats/custom
+
+style:
+  tag:
+    color: cyan
+    width_percentage: 26
+    min_width: 20
+  comment:
+    color: blue
+    width_percentage: 42
+    min_width: 45
+  snippet:
+    color: white
+
+finder:
+  command: fzf
+  overrides: '--layout=reverse --height=80% --inline-info'
+  overrides_var: '--height 40% --layout reverse'
+
+shell:
+  command: bash
