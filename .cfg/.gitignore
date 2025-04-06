@@ -22,3 +22,10 @@ Thumbs.db
 *.temp
 *.swp
 *.swo
+
+# Ignore sensitive files
+.openai-api-key
+.aws/credentials
+.ssh/id_*
+.ssh/*.pem
+.ssh/known_hosts

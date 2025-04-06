@@ -8,7 +8,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # API Keys
-export OPENAI_API_KEY=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
+# OpenAI API key is stored in ~/.openai-api-key file
+if [ -f ~/.openai-api-key ]; then
+  export OPENAI_API_KEY=$(cat ~/.openai-api-key)
+fi
 
 # Functions
 # # Directory Setup
