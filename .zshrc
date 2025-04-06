@@ -2,12 +2,14 @@
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 # Alias
-# Q
-alias 'q k4g3'='q chat --profile k4g3'
-alias 'q 40r4'='q chat --profile 40r4'
-
-# dotfiles
+alias qk4g3='q chat --profile k4g3'
+alias q40r4='q chat --profile 40r4'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias pic='ping -c 4 1.1.1.1'
+alias pi='ping'
+alias sss='speedtest --simple --secure'
+alias curlip='curl ipinfo.io'
+alias curlifme='curl ifconfig.me'
 
 # NVM Configuration
 export NVM_DIR="$HOME/.nvm"
