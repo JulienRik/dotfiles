@@ -1,7 +1,7 @@
 # Amazon Q pre block. Keep at the top of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
-# Alias
+# Aliases
 alias qk4g3='q chat --profile k4g3'
 alias q40r4='q chat --profile 40r4'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -10,6 +10,7 @@ alias pi='ping'
 alias sss='speedtest --simple --secure'
 alias curlip='curl ipinfo.io'
 alias curlifme='curl ifconfig.me'
+alias newnote='mkdir -p ~/Documents/notes && cd ~/Documents/notes && touch $1.md && nvim -c 'set filetype=markdown' $1.md'
 
 # NVM Configuration
 export NVM_DIR="$HOME/.nvm"

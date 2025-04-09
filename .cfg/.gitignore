@@ -1,31 +1,108 @@
-# Ignore node_modules directory
-node_modules/
+# Dotfiles .gitignore - Merged version
 
-# Ignore package files
-package-lock.json
-package.json
-
-# Ignore perl5 directory
-perl5/
-
-# Ignore system files
-.DS_Store
-.localized
-Thumbs.db
-
-# Ignore navi cache files
-.local/share/navi/cheats/tldr/
-.local/share/navi/cheats/denisidoro__cheats/
-
-# Ignore temporary files
-*.tmp
-*.temp
-*.swp
-*.swo
-
-# Ignore sensitive files
-.openai-api-key
-.aws/credentials
+# Sensitive information
 .ssh/id_*
 .ssh/*.pem
 .ssh/known_hosts
+.gnupg/
+.aws/credentials
+.config/gcloud/
+.netrc
+.env
+.env.private
+.openai-api-key
+**/credentials
+**/.env
+**/*_history
+**/*.log
+**/*.key
+**/*.pem
+**/*.crt
+**/*.p12
+**/*.pfx
+**/*.jks
+**/*.keystore
+**/*.truststore
+**/auth_tokens
+
+# Cache files
+.cache/
+**/__pycache__/
+**/*.pyc
+**/.DS_Store
+.Trash/
+.CFUserTextEncoding
+.lesshst
+.viminfo
+.node_repl_history
+.npm/
+.gem/
+.cargo/
+.rustup/
+
+# Large directories
+.local/share/
+.vscode/extensions/
+.vscode-insiders/extensions/
+.npm/
+.nvm/
+.pyenv/
+.rbenv/
+.cargo/
+.rustup/
+Library/
+Music/
+Movies/
+Pictures/
+Downloads/
+Documents/
+Applications/
+Desktop/
+node_modules/
+perl5/
+
+# App-specific files that change frequently
+.config/nvim/plugin/
+.vim/plugged/
+.vim/autoload/plug.vim
+.config/configstore/update-notifier-*.json
+.config/yarn/
+.config/htop/htoprc
+.zcompdump*
+.zsh_sessions/
+.local/share/navi/cheats/tldr/
+.local/share/navi/cheats/denisidoro__cheats/
+
+# Package files
+package-lock.json
+package.json
+
+# macOS specific
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.AppleDouble/
+.LSOverride
+.DS_Store
+.AppleDB
+.AppleDesktop
+.apdisk
+.localized
+Icon?
+
+# Temporary files
+*.swp
+*.swo
+*~
+.netrwhist
+tmp/
+.tmp/
+*.tmp
+*.temp
+
+# Allow these even if they match patterns above
+!.config/nvim/init.vim
+!.config/nvim/init.lua
+!.vim/colors/
+!.ssh/config
