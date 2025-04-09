@@ -2,8 +2,9 @@
 	name = Julien Bohnsack
 	email = julien@bohnsack-priv.de
 [core]
-pager = delta
+	pager = delta
 	excludesfile = /Users/julienbohnsack/.gitignore_global
+	editor = nvim
 
 [alias]
 	append = town append
@@ -37,6 +38,9 @@ pager = delta
     file-style = bold yellow ul
     file-decoration-style = none
     syntax-theme = OneHalfLight
+	navigate = true
+	light = false
+	side-by-side = true
 
 [diff]
     tool = vimdiff

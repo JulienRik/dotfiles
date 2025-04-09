@@ -22,9 +22,13 @@ if [ -f ~/.openai-api-key ]; then
   export OPENAI_API_KEY=$(cat ~/.openai-api-key)
 fi
 
+# Load private environment variables
+if [ -f ~/.env.private ]; then
+  source ~/.env.private
+fi
+
 # Functions
 # Directory Setup
-export S4KUR4_ROOT="/Volumes/S4KUR4/M41N/"
 
 function setupDirectories()
 {
